@@ -19,6 +19,7 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: dist/snake.svg
+          invert_colors: true # 🔥 讓蛇顏色反轉，讓背景變暗，蛇變亮
 
       - name: Push snake.svg to output branch
         uses: crazy-max/ghaction-github-pages@v3
